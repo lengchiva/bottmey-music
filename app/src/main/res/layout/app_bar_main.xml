@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/action_bar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/app_name"
+                    android:textSize="18sp"/>
+
+                <!--<ImageView
+                    android:id="@+id/imageView27"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginRight="27dp"
+                    android:src="@drawable/smartride_bar_logo2" />-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal">
+
+                    <!--<LinearLayout
+                        android:id="@+id/btn_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/info_icon"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_information_outline" />
+
+                        <TextView
+                            android:id="@+id/info_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="3dp"
+                            android:text="@string/info"
+                            android:textAppearance="@style/TextAppearance.AvenirHavy"
+                            android:textColor="@color/leftMenuIcon"
+                            android:textSize="15sp" />
+                    </LinearLayout>-->
+
+                   <!-- <FrameLayout
+                        android:id="@+id/btn_gift_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/gift_bars"
+                            android:layout_width="27dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:src="@drawable/ic_gift_icon" />
+
+                        <TextView
+                            android:id="@+id/promotion_badge_num"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="right"
+                            android:background="@drawable/badge_item_count"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="0"
+                            android:textSize="7sp" />
+                    </FrameLayout>-->
+
+                    <!--Notification Icon-->
+                    <!--<FrameLayout
+                        android:id="@+id/btn_notification"
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:layout_marginRight="20dp">
+
+                        <ImageView
+                            android:id="@+id/notify_bars"
+                            android:layout_width="13dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:src="@drawable/notify_icon" />
+
+                        <TextView
+                            android:id="@+id/notify_badge_num"
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/notify_bage_color"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:textColor="@color/white"
+                            android:textSize="6sp" />
+                    </FrameLayout>-->
+
+                   <!-- <FrameLayout
+                        android:id="@+id/btn_acctount_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:layout_marginRight="5dp">
+
+                        <ImageView
+                            android:id="@+id/account_bars"
+                            android:layout_width="22dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/user_icon" />
+                    </FrameLayout>-->
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--<include layout="@layout/content_main" />-->
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+</android.support.design.widget.CoordinatorLayout>
